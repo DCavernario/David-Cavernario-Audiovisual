@@ -43,34 +43,82 @@ button:hover {
 
 /*base*/
 
-:root{
-	--blanco: #B3CBFF;
-	--claro: #ED755F;
-	--oscuro: #412D6E;
-	--negro: #140F33;
+:root {
+    --blanco: #ECE7EF;
+    --claro: #ED755F;
+    --oscuro: #AB3E43;
+    --negro: #140F33;
 }
 
-body{
-    background: var(--claro);
+body {
+    background: linear-gradient(var(--oscuro), var(--claro));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
 }
 
-header{
+header {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin: 0 auto;
-    width: 100%;
+    /* margin-left: -50%;
+    width: 200%;
+    margin-top: -45px;
+    padding-top: 50px;
+    padding-bottom: 40px; */
     padding: 20px;
-    background: var(--oscuro);
+    width: 70%;
+    /* border-radius: 50px;
+    background: var(--oscuro); */
     color: var(--blanco);
+    margin-bottom: 30px;
 }
 
-a img{
+a img {
     width: 50px;
     height: 50px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-li a, li ul{
+li a,
+li ul {
     display: flex;
     flex-direction: row;
 }
 
+/* ul#galeria .tags {
+    font-size: 8px;
+    gap: 2px;
+    margin: 10px 0 0 0;
+    justify-content: flex-end;
+}
+
+ul#galeria .tags li {
+    border-radius: 999px;
+    padding: 2px 6px;
+}
+
+ul#galeria li:hover .tags {
+    gap: 6px;
+}
+
+ul#galeria li:hover .tags li {
+    border: 1 grey solid;
+} */
+
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+    color: var(--blanco);
+    background: var(--oscuro);
+    margin-left: -50%;
+    width: 200%;
+    position: absolute;
+    bottom: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    left: 0%;
+}
