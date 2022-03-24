@@ -102,6 +102,10 @@ li a *{
     box-shadow: 3px 3px 3px rgba(171, 62, 67,.7);
 }
 
+.ejercicios h3, .ejercicios p{
+    color: var(--blanco);
+}
+
 .html, .css, .js{
     background: rgb(20, 15, 51,.6);
     color: var(--claro);
