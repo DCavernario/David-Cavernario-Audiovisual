@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+body {
+    font-family: sans-serif;
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+nav ul {
+    list style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 2px;
+}
+
+li {
+    list-style: none;
+}
+
+button,
+.btn {
+    background: none;
+    border: solid 2px var(--claro);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/*base*/
+
