@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto:wght@700&display=swap');
+
+:root {
+    --negro: #292A34;
+    --gris: #BCD9DF;
+    --blanco: #FFFFFF;
+}
+
+*{font-family: "Roboto", sans-serif;
+margin: 0 auto;
+text-align: center;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--negro);
+    
+}
+
+header{
+    color: var(--negro);
+    background-color: var(--gris);
+    display: flex;
+    flex-direction: row;
+    font-family: "Passion One", sans-serif;
+    font-size: 20px;
+    padding: 5% 5% 0 0;
+}
+
+/* header img{
+    position: absolute;
+    max-width: 200px;
+    border-radius: 100px;
+    margin: 0 auto;
+    border: var(--gris) solid 10px;
+    margin: auto 39%;
+}
+*/
+
+header .data, .data h1{
+    font-size: 120%;
+    flex-direction: column;
+    text-align: left;
+}
+
+header h1{font-size: 300%;}
+
+main{
+    border: 1px var(--blanco) solid;
+    border-radius: 40px;
+    max-width: 50%;
+    min-width: 600px;
+    padding: 50px 0 0 0;
+    animation: galeria 1s;
+    transition: 0.3s;
+}
+
+.subir{
+    position: absolute;
+}
+
+li{
+    list-style: none;
+}
+
+nav{
+    background: var(--gris);
+    padding: 10px;
+    max-width: 40%;
+    border-radius: 15px;
+    margin: 8% auto 3% auto;
+    min-width: 600px
+}
+
+nav a{font-family: "Passion One";
+    font-size: 20px;
+    padding: 10px;
+    margin: auto 4%;
+}
+
+#siguiente{
+    color: var(--negro);
+    background: var(--gris);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: .3s;
+    opacity: .3;
+}
+
+#siguiente:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+#galeria h2{font-family: 'Passion One';
+    color: var(--blanco);
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.galeria{
+    display: flex;
+    flex-direction: row;
+    margin: 6%;
+    justify-content: space-between;
+}
+
+.galeria div{max-width: 120px;}
+
+.galeria div img{background-size: cover;}
+
+#ilustracion, #mograph, #diseño, #tresd{
+    animation: aparecer 1s;
+}
+
+    @keyframes aparecer {
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    
+}
+
+main div{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 7px;
+}
+
+h1{
+    font-family: "Passion One", sans-serif;
+}
+
+h2 a{font-family: "Passion One";
+font-size: 23px;}
+
+h3, h4{color: var(--blanco);
+    text-align: left;
+    width: 100%;
+   /* margin: 13px 0 0px 0; */
+}
+
+h3{font-size: 13px; height: 40px;}
+
+.galeria h4{font-size: 10px;
+    opacity: 0;
+    transition: .5s;
+    height: 75px;
+}
+
+.galeria div:hover h4{
+    opacity: 1;
+}
+
+
+main img{
+    max-width: 120px;
+    border-radius: 20px;
+    height: 120px;
+}
+
+.formacion{
+    opacity: 0.2;
+    margin: 10%;
+    transition: 0.3s;
+}
+
+.formacion:hover{
+    opacity: 1;
+}
+
+.formacion h2{
+    color: var(--gris);
+}
+
+.formacion div{
+    margin: 1% auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 40%;
+    background: var(--gris);
+    padding: 3% 5%;
+    border-radius: 50px;
+    
+}
+
+.formacion h3, .formacion h4{
+    color: var(--negro);
+    margin: 10px auto;
+}
+
+.formacion h3{
+    font-size: 220%;
+    font-family: 'Passion One';
+    height: auto;
+}
+
+.formacion h4{
+    font-size: 150%;
+    margin-bottom: 10%;
+}
+
+a{text-decoration: none;
+color: var(--blanco);
+}
+
+footer{
+    background: black;
+    width: 100%;
+    padding: 2%;
+    margin: 5% 0 0 0;
+}
+
+footer p, footer a{
+    color: var(--blanco);
+    font-family: "Passion One", sans-serif;
+    font-size: 20px;
+}
+
+/* *{outline: red 1px solid;} */
