@@ -43,6 +43,25 @@ button:hover {
 
 /*base*/
 
+:root{
+	--blanco: #B3CBFF;
+	--claro: #ED755F;
+	--oscuro: #412D6E;
+	--negro: #140F33;
+}
+
+body{
+    background: var(--claro);
+}
+
+header{
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    background: var(--oscuro);
+    color: var(--blanco);
+}
+
 a img{
     width: 50px;
     height: 50px;
