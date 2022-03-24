@@ -45,7 +45,7 @@ button:hover {
 
 :root {
     --blanco: #ECE7EF;
-    --claro: #ED755F;
+    --claro: #ed755f;
     --oscuro: #AB3E43;
     --negro: #140F33;
 }
@@ -86,6 +86,31 @@ li a,
 li ul {
     display: flex;
     flex-direction: row;
+}
+
+li a *{
+    margin: auto 5px;
+}
+
+.ejercicios{
+    margin: 5px auto;
+    padding: 10px;
+    width: 60%;
+    background: rgb(237, 117, 95,.5);
+    border-radius: 20px;
+}
+
+.html, .css, .js{
+    background: var(--negro);
+    color: var(--claro);
+    padding: 3px;
+    font-size: 10px;
+    border-radius: 5px;
+    justify-content: end;
+    align-items: flex-end;
+}
+.tags{
+    gap: 5px;
 }
 
 /* ul#galeria .tags {
