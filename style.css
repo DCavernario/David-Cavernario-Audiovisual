@@ -54,7 +54,7 @@ body {
     background: linear-gradient(var(--oscuro), var(--claro));
     background-repeat: no-repeat;
     background-size: cover;
-    height: 900px;
+    height: 960px;
 }
 
 header {
