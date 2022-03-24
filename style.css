@@ -45,7 +45,7 @@ button:hover {
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 :root {
-    --blanco: #ECE7EF;
+    --blanco: #ece7ef;
     --claro: #ed755f;
     --oscuro: #ab3e43;
     --negro: #140f33;
@@ -75,6 +75,8 @@ header {
     background: var(--oscuro); */
     color: var(--blanco);
     margin-bottom: 30px;
+    border: 3px solid rgba(236, 231, 239,.8);
+    border-radius: 30px;
 }
 
 h1, h2, h3, p, a{
@@ -170,9 +172,6 @@ footer {
     background: var(--oscuro);
     margin-left: -50%;
     width: 200%;
-    position: absolute;
-    bottom: 5px;
     padding-bottom: 20px;
     padding-top: 20px;
-    left: 0%;
 }
