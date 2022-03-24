@@ -1,0 +1,58 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+   
+    <title>Niños deprimidos</title>
+    <meta name="description" content="Interactive vaina">
+    <meta property="og:title" content="Niños deprimidos">
+
+    <link rel="prefetch" href="img/001.mp3" />
+
+
+    <link rel="stylesheet" href="personajes.css">
+</head>
+
+<body onload="musikina()">
+
+    <main>
+    <div class="todo">
+
+        <div id="marco"></div>
+        <div id="peluco"></div>
+        <div id="cabeza"></div>
+        <div id="ojos"></div>
+        <div id="nariz"></div>
+        <div id="boca"></div>
+        <div id="fondo"></div>
+    </div>
+
+    <div id="botonera">
+        <button onclick="ojo()" id="ojin"><img src="img/Btnojos.png" alt=""></button>
+    <button onclick="boca(); musikina()" id="bocona"><img src="img/Btnboca.png" alt=""></button>
+    <button onclick="cabeza()" id="cabezon"><img src="img/Btncabesa.png" alt=""></button>
+    <button onclick="nariz()" id="napia"><img src="img/Btnnariz.png" alt=""></button>
+    <button onclick="pelo()" id="pelete"><img src="img/Btnpeluco.png" alt=""></button>
+    <button onclick="aleatorio()" id="randome"><img src="img/Btnrandom.png" alt=""></button>
+    
+</div>
+<input type="range" min="0" max="360" step="any" value="0" onmousemove="hue()" id="tono">
+    
+    
+    
+<footer>
+    <a class="ana" href="https://www.instagram.com/ana.magpie/"></a>
+    <a class="david" href="https://www.instagram.com/davidcavernario/"></a>
+    <button onclick="musikina()" id="musikina"><img src="img/Btnrandom.png" alt=""></button>
+
+</footer>
+</main>
+
+
+
+
+
+
+
+<script src="personajes.js"></script>
+</body>
