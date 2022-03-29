@@ -223,6 +223,13 @@ footer {
     padding-bottom: 20px;
     padding-top: 20px;
     border-radius: 50px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+footer:hover{
+    letter-spacing: 10px;
+    color: var(--claro);
 }
 
 @media only screen and (max-width: 700px) {
