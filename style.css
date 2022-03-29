@@ -51,6 +51,10 @@ button:hover {
     --negro: #140f33;
 }
 
+*{
+    transition: .1s;
+}
+
 
 body {
     background: linear-gradient(var(--oscuro), var(--claro));
@@ -111,7 +115,7 @@ li a * {
     padding: 20px;
     padding-top: 25px;
     width: 60%;
-    background: rgba(237, 117, 95, .5);
+    background: rgba(237, 117, 95, .3);
     border-radius: 20px;
     box-shadow: 3px 3px 3px rgba(171, 62, 67, .7);
     transition: 0.3s;
@@ -119,6 +123,7 @@ li a * {
 
 .ejercicios:hover{
     margin-top: 8px;
+    background: rgba(237, 117, 95, .5);
     box-shadow: 1px 1px 1px rgba(171, 62, 67, .7);
 }
 
