@@ -6,7 +6,13 @@ let ojos = [
     'Ojo4.png',
     'Ojo5.png',
     'Ojo6.png',
-    'Ojo7.png'
+    'Ojo7.png',
+    'Ojo8.png',
+    'Ojo9.png',
+    'Ojo10.png',
+    'Ojo11.png',
+    'Ojo12.png',
+    'Ojo13.png'
  
 ]
 
@@ -18,7 +24,13 @@ let bocas = [
     'Boca4.png',
     'Boca5.png',
     'Boca6.png',
-    'Boca7.png'
+    'Boca7.png',
+    'Boca8.png',
+    'Boca9.png',
+    'Boca10.png',
+    'Boca11.png',
+    'Boca12.png',
+    'Boca13.png'
     
 ]
 
@@ -37,7 +49,13 @@ let narices = [
     'Nariz4.png',
     'Nariz5.png',
     'Nariz6.png',
-    'Nariz7.png'
+    'Nariz7.png',
+    'Nariz8.png',
+    'Nariz9.png',
+    'Nariz10.png',
+    'Nariz11.png',
+    'Nariz12.png',
+    'Nariz13.png'
 ]
 
 let pelos = [
@@ -48,7 +66,13 @@ let pelos = [
     'peluco4.png',
     'peluco5.png',
     'peluco6.png',
-    'peluco7.png'
+    'peluco7.png',
+    'peluco8.png',
+    'peluco9.png',
+    'peluco10.png',
+    'peluco11.png',
+    'peluco12.png',
+    'peluco13.png'
 ]
 
 let n_ojos = 0;
