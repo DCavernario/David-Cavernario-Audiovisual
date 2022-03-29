@@ -57,7 +57,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 960px; */
-    height: 60vw;
+    height: 200vw;
 }
 
 header {
@@ -166,6 +166,47 @@ ul#galeria li:hover .tags li {
     border: 1 grey solid;
 } */
 
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid .ejercicios{
+    width: 250px;
+    font-size: 13px;
+}
+
+.grid .ejercicios img{
+    width: 70px;
+    height: 70px;
+
+}
+
+.grid .tags {
+    gap: 5px;
+    justify-content: center;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hover{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    color: var(--claro);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    transition: .3s;
+    border: solid 2px var(--claro);
+  }
+  
+  .hover:hover{
+    background: var(--claro);
+    border: solid 2px rgba(255,255,255,0);
+    color: var(--oscuro);
+  }
+
 
 footer {
     text-align: center;
@@ -178,3 +219,16 @@ footer {
     padding-top: 20px;
     border-radius: 50px;
 }
+
+@media only screen and (max-width: 700px) {
+    body {
+      height: 200vw;
+      transition: .3s
+    }
+  }
+
+  @media only screen and (min-width: 700px) {
+    body {
+        height: 60vw;
+    }
+  }
