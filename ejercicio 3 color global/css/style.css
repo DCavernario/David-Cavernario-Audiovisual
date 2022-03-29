@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,300;0,500;0,900;1,500&display=swap');
+
+:root {
+
+    --c: rgb(122, 204, 248);
+    --bck: rgb(27, 31, 27);
+}
+
+body {
+    background-color: rgb(91, 93, 121);
+    color: var(--c);
+    font-family: 'Prompt', sans-serif;
+    font-weight: 200;
+    margin: 0;
+}
+
+header, main{
+    background-color: var(--bck);
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+header{margin: -20px 0 20px 0;
+}
+
+main {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--c);
+    text-align: center;
+    margin: 20px auto 0 auto;
+}
+
+h2 {
+    color: var(--c);
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h3{
+    font-weight: 100;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: medium;
+    margin: 10px auto;
+    max-width: 60%;
+
+}
+
+div {
+    padding: 10px;
+    background-color: rgb(48, 48, 53);
+    border-radius: 20px;
+    
+}
+
+form{
+    text-align: center;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    
+}
+
+form div {
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: var(--c);
+    padding: 20px;
+    margin: 10px 0;
+}
+
+form div:nth-child(2){
+    display: block;
+}
+
+form div:hover {
+    color: var(--bck);
+    background-color: var(--c);
+    font-weight: 500;
+
+}
+
+p, input{
+text-align: center;
+margin: 3 auto;
+}
+
+.fecha{
+    text-align: center;
+    margin: 2px auto;
+    display: block;
+}
+
+input[type="text"],[type="number"],[type="date"],[type="color"],[type="file"],[type="submit"],[type="reset"]{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+}
+
+input[type="text"],[type="number"],[type="date"],[type="color"],textarea{
+    background-color: rgb(200, 200, 228);
+}
+
+form textarea {
+    width: calc(100% - 20px);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.data{
+    color: rgb(108, 110, 140);
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+

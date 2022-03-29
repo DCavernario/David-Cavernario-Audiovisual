@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Secular+One&family=Titan+One&display=swap');
+
+
+
+body {
+    background: linear-gradient(palegreen, rgb(33, 114, 79));
+    font-family: 'secular one', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav{font-size: 12px;
+margin: 0, 50%;}
+
+header,
+main {
+    background: rgba(255, 255, 224, 0.8);
+    
+    margin-bottom: 15px;
+    box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+main{max-width: 800px;
+    margin: 10px auto;
+    border-radius: 20px;}
+
+h1{
+    font-family: 'Passion One', sans-serif;
+}
+
+h2{
+    font-family: 'Secular One', sans-serif;
+}
+
+a{color: black;
+text-decoration: none;
+}
+
+header ul {
+    display: flex;
+    gap: 80px;
+}
+
+header img {
+    width: 40%;
+    padding: 0 0 15px 10px;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+p{
+    font-family: 'secular one', sans-serif;
+}
+
+
+ul p {
+    width: 100%;
+}
+
+
+ul img {
+    border-radius: 30px;
+}
+
+ul button {
+    background-color: lightgreen;
+    border: none;
+    box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5% 25% ;
+    width: 100%;
+    transition: 0.3s;
+    font-family: 'secular one', sans-serif;
+}
+
+main ul{gap: 50px;}
+
+button:hover {
+    background: none;
+    outline: lightgreen 2px double;
+    color: lightgreen;
+    }
+
+li {
+    max-width: 960px;
+    margin-bottom: 10px;
+
+}
+
+li {
+    width: 20%;
+}
+
+li p {
+    height: 80px;
+}
+
+footer a{
+    text-decoration: none;
+    color: orangered;
+}
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+
+main h4 {
+    background: lightseagreen url(../img/vegan-market-portada.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 120px;
+    margin: 0 -20px;
+    color: white;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    font-size: 300%;
+    text-align: center;
+    font-family: 'Passion One', sans-serif;
+    
+}
+
+h4 a {
+    color: rgb(207, 248, 110);
+}
+
+/*--------*/
+
+@media (max-width: 600px) {
+    ul {
+        flex-direction: column;
+        width: 100%
+    }
+
+    ul p {
+        width: 100%;
+    }
+
+    ul img {
+        width: 800px;
+        height: 80px;
+        object-fit: cover;
+    }
+
+    li {width: 100%};
+
+}
+
+ul button{
+    padding: 2% 25%;
+}
+
+h2, h3, h4{ font-size: 9px;} 
+
