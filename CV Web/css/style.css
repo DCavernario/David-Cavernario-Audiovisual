@@ -14,6 +14,8 @@ html{
     scroll-behavior: smooth;
 }
 
+*{margin: 0 auto;}
+
 body{
     background-color: var(--negro);
     
@@ -27,17 +29,21 @@ header{
     font-family: "Passion One", sans-serif;
     font-size: 20px;
     padding: 5% 5% 0 0;
+    z-index: 0;
 }
 
-/* header img{
-    position: absolute;
+.icono{
     max-width: 200px;
-    border-radius: 100px;
+    border-radius: 500px;
     margin: 0 auto;
     border: var(--gris) solid 10px;
-    margin: auto 39%;
+    /* position: absolute;
+    left: calc(50% - 140px);
+    top: 10%; */
+    margin-top: -50px;
+    margin-left: -5%;
+    z-index: 0;
 }
-*/
 
 header .data, .data h1{
     font-size: 120%;
@@ -70,8 +76,10 @@ nav{
     padding: 10px;
     max-width: 40%;
     border-radius: 15px;
-    margin: 8% auto 3% auto;
-    min-width: 600px
+    margin: -30px auto 3% auto;
+    min-width: 600px;
+    z-index: 9;
+    mix-blend-mode: lighten;
 }
 
 nav a{font-family: "Passion One";
@@ -165,10 +173,72 @@ main img{
     height: 120px;
 }
 
+.rrss{
+    width: 60px;
+    position: fixed;
+    top: 25%;
+    left: 2%;
+    z-index: 9;
+}
+
+.rrssIG{
+    background: url(/img/iconos/ig.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}   
+
+.rrssAS{
+    background: url(/img/iconos/artstation.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.rrssVM{
+    background: url(/img/iconos/vimeo.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.rrssLI{
+    background: url(/img/iconos/linkedin.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.rrssTT{
+    background: url(/img/iconos/tiktok.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.rrssIG, .rrssAS, .rrssVM, .rrssLI, .rrssTT{
+    opacity: .3;
+    transition: .3s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rrssIG:hover, .rrssAS:hover, .rrssVM:hover, .rrssLI:hover, .rrssTT:hover{
+    opacity: 1;
+}
+
 .formacion{
+    width: 100%;
     opacity: 0.2;
-    margin: 10%;
+    margin: 10% auto;
     transition: 0.3s;
+    margin-bottom: 3%;
 }
 
 .formacion:hover{
@@ -207,6 +277,16 @@ main img{
     margin-bottom: 10%;
 }
 
+.programas{
+    max-width: 60%;
+    transition: 0.3s;
+    opacity: 0.2;
+}
+
+.programas:hover{
+    opacity: 1;
+}
+
 a{text-decoration: none;
 color: var(--blanco);
 }
@@ -224,4 +304,118 @@ footer p, footer a{
     font-size: 20px;
 }
 
+.subir{
+    background: var(--gris);
+    border: none;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 20px;
+    mix-blend-mode: screen;
+    position: fixed;
+    right: 15%;
+    bottom: 9%;
+    opacity: 0.2;
+    transition: 0.3s;
+    z-index: 9;
+    padding-right: 55px;
+    margin-bottom: 5px;
+    box-shadow: 0 5px var(--negro);
+}
+
+.subir a{
+    mix-blend-mode: multiply;
+    color: black;
+}
+
+.subir:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-shadow: 0 10px var(--negro);
+}
+
+.subir:active{
+    margin-bottom: 0;
+    box-shadow: 0 0px var(--negro);
+}
+
+
 /* *{outline: red 1px solid;} */
+
+@media (max-width: 600px) {
+
+    header{
+        font-size: 10px;
+        background: none;
+        color: var(--gris);
+        font-size: 20px;
+    }
+
+    .data{
+        display: none;
+    }
+
+    nav{
+    background: none;
+    padding: 5px;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 15%;
+
+    }
+
+    .rrss{
+        display: none;
+    }
+
+    .icono{
+        /* margin: 20px auto;
+        max-width: 100px;
+        border: var(--gris) solid 5px; */
+        display: none;
+    }
+
+    .galeria{
+        display: flex;
+        flex-direction: column;
+        margin: 6%;
+        justify-content: center;
+    }
+
+    .galeria *{
+        margin: 0 auto;
+    }
+
+    .galeria h4{font-size: 10px;
+        opacity: 1;
+        transition: .5s;
+        height: 75px;
+    }
+
+    main{
+        border: 1px var(--blanco) solid;
+        border-radius: 40px;
+        max-width: 30%;
+        min-width: 300px;
+        padding: 50px 0 0 0;
+        animation: galeria 1s;
+        transition: 0.3s;
+    }
+
+    .formacion{
+        font-size: 70%;
+    }
+
+    .programas{
+        margin-top: 3%;
+    }
+
+    footer{
+        background: none;
+    }
+}
